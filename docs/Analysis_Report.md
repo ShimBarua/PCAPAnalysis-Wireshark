@@ -1,6 +1,6 @@
 # Lab — Network Traffic Analysis on Wireshark
 
-Short summary: Captured ARP, ICMP, HTTP, FTP, Telnet, SMB, and a TCP 3‑way handshake between an Analyst VM and a vulnerable VM. Documented evidence (screenshots), key fields, and quick takeaways.
+Short summary: Captured ARP, ICMP, HTTP, FTP, Telnet, SMB, and a TCP 3‑way handshake between an analyst VM and a vulnerable VM. Documented evidence (screenshots), key fields/filters, and quick takeaways.
 
 ## Lab Info
 - Date: 08-23-2025

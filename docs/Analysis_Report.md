@@ -12,7 +12,7 @@ Short summary: Captured ARP, ICMP, HTTP, FTP, Telnet, SMB, and a TCP 3‑way han
 
 ## How to Reproduce 
 1) Start Wireshark on the host‑only interface and begin capture.
-2) Run the commands in commands.txt (same order).
+2) Run the commands in commands.md (same order).
 3) Use filters to isolate each protocol.
 4) Save capture
 

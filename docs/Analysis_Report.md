@@ -1,4 +1,4 @@
-# Lab 01 — Network Traffic Analysis (Metasploitable)
+# Lab — Network Traffic Analysis on Wireshark
 
 Short summary: Captured ARP, ICMP, HTTP, FTP, Telnet, SMB, and a TCP 3‑way handshake between an Analyst VM and a vulnerable VM. Documented evidence (screenshots), key fields, and quick takeaways.
 

@@ -1,0 +1,21 @@
+# Limit traffic to the target VM
+ip.addr == 192.168.235.129 
+
+# Core protocols
+arp
+icmp
+http
+http.request
+ftp
+telnet or tcp.port == 23
+smb || smb2 || nbss
+
+# TCP handshake (Both SYN and ACK; use conversation filter to see SYN to SYN/ACK to ACK)
+tcp.flags.syn==1 or tcp.flags.ack==1
+
+# Handy extras
+tcp.port == 21        # FTP
+tcp.port == 23        # Telnet
+tcp.port == 80        # HTTP
+frame contains "USER "   # finds FTP username lines
+frame contains "PASS "   # finds FTP password lines

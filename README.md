@@ -6,15 +6,15 @@ This Repository documents a hands-on network traffic analysis lab using Wireshar
 -Lab hosts: Analyst (Kali) 192.168.235.128 > Target VM 192.168.235.129
 -Deliverables: PCAPS, protocol screenshots, filters, commands, analysis report.
 
-# Protocols Captured
+## Protocols Captured
 -ARP, ICMP, HTPP, FTP, Telnet, SMB
 -TCP handshake example
 -Notes include: MAC/IP mappings, HTTP headers, plaintext credentials
 
-# What I Learned
+## What I Learned
 -How to isolate conversations and interpret protocols
 -Risks of plaintext protocols and the need for encryption
 -Practical Wireshark capture
 
-# Safety
+## Safety
 This lab runs in an isolated environment; DO NOT scan or attack hosts you do not own.

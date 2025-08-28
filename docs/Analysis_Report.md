@@ -22,7 +22,7 @@ Short summary: Captured ARP, ICMP, HTTP, FTP, Telnet, SMB, and a TCP 3‑way han
 
 ### ARP
 - Display filter: arp
-- Evidence:
+- Evidence: arp_request_and_reply.PNG  
 - Notes:
   - Request: “Who has 192.168.235.129? Tell 192.168.235.128”
   - Shows MACs for analyst and target.
@@ -30,7 +30,7 @@ Short summary: Captured ARP, ICMP, HTTP, FTP, Telnet, SMB, and a TCP 3‑way han
 ### ICMP (Ping)
 - Command: ping -c 2 <Target_VM_IP>
 - Display filter: icmp
-- Evidence:
+- Evidence: ICMP_Request.PNG and ICMP_Reply.PNG  
 - Notes:
   - Real Time Text from the Echo reply field.
   - Echo request ID/seq numbers match reply.
@@ -38,7 +38,7 @@ Short summary: Captured ARP, ICMP, HTTP, FTP, Telnet, SMB, and a TCP 3‑way han
 ### HTTP (plaintext)
 - Command: curl -v http://192.168.235.129/
 - Display filter: http or http.request
-- Evidence: 
+- Evidence: HTTP_TCP_Stream.PNG
 - Notes:
   - Server header: <e.g., Apache>
   - Any Set-Cookie or interesting paths.
@@ -46,35 +46,35 @@ Short summary: Captured ARP, ICMP, HTTP, FTP, Telnet, SMB, and a TCP 3‑way han
 ### FTP (plaintext credentials)
 - Command sequence: ftp 192.168.235.129 → USER msfadmin → PASS msfadmin
 - Display filter: ftp
-- Evidence: 
+- Evidence: FTP_Plaintext_Credentials.PNG  
 - Notes:
   - Credentials visible in plaintext.
 
 ### Telnet (plaintext session)
 - Command: telnet 192.168.235.129 → login: msfadmin/msfadmin → whoami; uname -a; exit
 - Display filter: telnet or tcp.port == 23
-- Evidence:
+- Evidence: Telnet_Plaintext.PNG    
 - Notes:
   - Keystrokes and prompts readable (unencrypted).
 
 ### SMB
 - Command: smbclient -L //192.168.235.129/ -N
 - Display filter: smb || smb2 || nbss
-- Evidence: 
+- Evidence: SMB_Negotiate_Protocol_Response.PNG , SMB_Setup_and_Response1.PNG , SMB_Setup_and_Response2.PNG
 - Notes:
 
 
 ### TCP 3‑Way Handshake
 - Example connection: HTTP to 192.168.235.129:80
-- Evidence:
+- Evidence: TCP_3_Way_Handshake.PNG  
 - Notes:
   - SYN starts, SYN/ACK responds, ACK completes.
 
 ---
 
 ## Statistics
-- Protocol Hierarchy (Wireshark: Statistics → Protocol Hierarchy): 
-- Conversations → TCP tab: 
+- Protocol Hierarchy (Wireshark: Statistics → Protocol Hierarchy): Protocol_Hierarchy.PNG  
+- Conversations → TCP tab: coversations_tcp.PNG
 
 ## Key Takeaways
 - Plaintext protocols (FTP/Telnet) expose credentials and shows the importance of encryption

@@ -1,0 +1,83 @@
+Created by Wireshark 4.4.7
+
+File
+
+Name:
+/home/student/msf2_Lab.pcapng
+Length:
+69 kB
+Hash (SHA256):
+e7d5e183cce3d638f874bbc9593010b681b1c67cd0b1a7a575a8df7c537dfb17
+Hash (SHA1):
+3f0b4e5a87de8bc7465090afbc7fd866af1200e0
+Format:
+Wireshark/... - pcapng
+Encapsulation:
+Ethernet
+
+Time
+
+First packet:
+2025-08-22 02:43:55
+Last packet:
+2025-08-22 02:56:13
+Elapsed:
+00:12:17
+
+Capture
+
+Hardware:
+Intel(R) Core(TM) i5-7600K CPU @ 3.80GHz (with SSE4.2)
+OS:
+Linux 6.12.33+kali-amd64
+Application:
+Dumpcap (Wireshark) 4.4.7
+
+Interfaces
+
+Interface
+Dropped packets
+Capture filter
+Link type
+Packet size limit (snaplen)
+eth0
+0 (0.0%)
+none
+Ethernet
+262144 bytes
+
+Statistics
+
+Measurement
+Captured
+Displayed
+Marked
+Packets
+571
+571 (100.0%)
+—
+Time span, s
+737.807
+737.807
+—
+Average pps
+0.8
+0.8
+—
+Average packet size, B
+88
+88
+—
+Bytes
+50083
+50083 (100.0%)
+0
+Average bytes/s
+67
+67
+—
+Average bits/s
+543
+543
+—
+

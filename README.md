@@ -7,7 +7,7 @@ This Repository documents a hands-on network traffic analysis lab using Wireshar
 -Deliverables: PCAPS, protocol screenshots, filters, commands, analysis report.  
 
 ## Protocols Captured
--ARP, ICMP, HTPP, FTP, Telnet, SMB  
+-ARP, ICMP, HTTP, FTP, Telnet, SMB  
 -TCP handshake example  
 -Notes include: MAC/IP mappings, HTTP headers, plaintext credentials  
 
